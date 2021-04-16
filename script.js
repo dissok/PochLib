@@ -114,12 +114,6 @@ function EcranSaisie(){
 
 	eltButtonRechercher.addEventListener('click',function(event){
 		event.preventDefault();
-		if (document.getElementById("titreLivre").value == "") {
-			libelleAlert = "Vous devez saisir obligatoirement le titre ";
-		}	
-		if (document.getElementById("AuteurLivre").value == "") {
-			libelleAlert="Vous devez saisir obligatoirement l'auteur ";	
-		}
 		if (libelleAlert != "") {
 			alert(libelleAlert);
 			libelleAlert="";
