@@ -1,0 +1,272 @@
+body {
+  text-align: center;
+  margin: auto;
+  font-family: "Bubblegum Sans";
+  padding: 10px;
+  width: auto;
+}
+
+/* .viewLogo{
+  width: 160px;
+  height: 160px;
+  margin-left: auto;
+  margin-right: 5%;
+} */
+
+#formsSearchLivre {
+  width: 100%;
+  display: inline-block;
+}
+
+#myBooks {
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+}
+
+hr {
+  width: 97%;
+  height: 0.9px;
+  background-color: #677798;
+  width: 100%;
+}
+
+.DescriptionLivre {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#divButtonSearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: 100px;
+}
+
+#blockfields {
+  text-align: left;
+  margin: 5px auto;
+  width: 100%;
+}
+
+#titreLivre, #AuteurLivre {
+  width: 100%;
+  font-family: "Bubblegum Sans";
+  color: black;
+  margin-top: 3px;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+#RechercheButton, #ajoutLivre {
+  width: 150px;
+  font-size: 16px;
+  padding: 10px 10px;
+  background-color: #008000;
+  border-radius: 8px;
+  border-style: ridge;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+    -webkit-box-align: center;
+       -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  color: #FDFEFF;
+}
+
+#AnnulerButton {
+  width: 150px;
+  font-size: 16px;
+  padding: 10px 5px;
+  background-color: #d1443a;
+  border-radius: 8px;
+  border-style: ridge;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+        align-items: center;
+  color: #FDFEFF;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+label {
+  font-size: 0.5em;
+  font-weight: normal;
+}
+
+#formsSearchLivre {
+  text-align: left;
+  margin: auto;
+  width: 100%;
+  padding: 1em;
+}
+
+input, textarea {
+  width: 95%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #999;
+  padding: 10px;
+}
+
+#bookList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bookItem {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  border: 2px solid #047a6b;
+  background-color: #fcfbf6;
+  margin: 15px;
+  min-width: 350px;
+  padding: 10px;
+}
+
+.headerSection, .sectionResultat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 80px;
+}
+
+h1 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 95%;
+  height: 40%;
+  font-size: 1.9em;
+  font-weight: bold;
+  text-align: center;
+  background-color: #D3D3D3;
+  border-radius: 10px / 10px;
+  border-style: ridge;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #010f0f;
+}
+
+h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 95%;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.bookDescription {
+  margin-bottom: 10px;
+}
+
+.couvertureLivre {
+  display: block;
+  margin: 0 auto;
+}
+
+#aucunlivre {
+  padding: 0.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #2e3333;
+}
+
+@media all and (max-width: 760px) {
+  #RechercheButton, #AnnulerButton, #blockfields {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 90%;
+    margin: 5px auto;
+  }
+  #titreLivre, #AuteurLivre {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: auto;
+  }
+  .bookList {
+    width: 100%;
+    margin: 5px auto;
+  }
+  .bookItem {
+    width: 45%;
+    padding: 5px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .bookItem {
+    width: 95%;
+    margin: 5px auto;
+  }
+}
